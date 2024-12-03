@@ -66,6 +66,7 @@ watchEffect(() => {
 .main {
   width: 100vw;
   translate: var(--container-undo) 0;
+  margin: 0 0 150px 0;
 }
 
 .buttons {

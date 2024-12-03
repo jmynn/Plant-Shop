@@ -9,3 +9,10 @@ export type TypeMainCard = {
 };
 
 export type TypeDirection = 'left' | 'right';
+export type TypePath = `/${string}`;
+
+export type TypeAboutItem = {
+  icon: TypePath;
+  title: string;
+  text: string;
+};
