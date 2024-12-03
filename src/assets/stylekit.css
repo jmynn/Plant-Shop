@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --color-primary: #156963;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-brown: #2C1500;
+
+  --line-height: 150%;
+  --fz-headline-1: 68px;
+  --fz-headline-2: 20px;
+  
+  --fz-text-regular: 16px;
+  
+  --fz-text-large: 18px;
+  --fz-text-medium: 14px;
+  --fz-text-small: 10px;
+
+  --container: 91.25vw;
+  --container-undo: calc((100vw - var(--container)) / 2 *-1);
+  
+  --transition: all ease-in-out 0.3s;
+}
+

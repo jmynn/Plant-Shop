@@ -1,0 +1,27 @@
+@import './nullstyle.css';
+@import './stylekit.css';
+
+body {
+  position: relative;
+  background-color: var(--color-white);
+  font-family: 'Montserrat', serif;
+  font-weight: 400;
+  font-size: var(--fz-text-regular);
+  color: var(--color-black);
+}
+#app {
+  width: inherit;
+  height: inherit;
+}
+
+@media screen and (hover: hover) and (pointer: fine) {
+  ._hover {
+    transition: var(--transition);
+    opacity: 1;
+    &:hover {
+      cursor: pointer;
+      transition: var(--transition);
+      opacity: 0.7;
+    }
+  }
+}
