@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import AboutSection from '@/components/AboutSection.vue';
+import AdSection from '@/components/AdSection.vue';
 import MainSection from '@/components/MainSection.vue';
 import PlantsSection from '@/components/PlantsSection.vue';
 </script>
@@ -9,6 +10,7 @@ import PlantsSection from '@/components/PlantsSection.vue';
   <div class="content">
     <AboutSection />
     <PlantsSection />
+    <AdSection />
   </div>
 </template>
 

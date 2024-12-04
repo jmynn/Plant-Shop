@@ -1,4 +1,4 @@
-import type { TypeAboutItem, TypeMainCard, TypePlantItem, TypeReadonly } from '@/types';
+import type { TypeAboutItem, TypeMainCard, TypePath, TypePlantItem, TypeReadonly } from '@/types';
 
 export const PATHS = {
   HOME: '/'
@@ -85,3 +85,8 @@ export const PLANTS = [
     }
   }
 ] as TypeReadonly<TypePlantItem, 'array'>;
+
+export const AD_SECTION_PICS = {
+  small: '/src/assets/ad/small.png',
+  big: '/src/assets/ad/big.png'
+} as TypeReadonly<Record<string, TypePath>, 'object'>;
