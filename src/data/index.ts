@@ -1,7 +1,8 @@
 import type { TypeAboutItem, TypeMainCard, TypePath, TypePlantItem, TypeReadonly } from '@/types';
 
 export const PATHS = {
-  HOME: '/'
+  HOME: '/',
+  ABOUT: '/about'
 } as const;
 
 export const MAIN_CARDS = [
@@ -90,3 +91,5 @@ export const AD_SECTION_PICS = {
   small: '/src/assets/ad/small.png',
   big: '/src/assets/ad/big.png'
 } as TypeReadonly<Record<string, TypePath>, 'object'>;
+
+export const VISIT_PIC_PATH: TypePath = '/src/assets/plant.png';
