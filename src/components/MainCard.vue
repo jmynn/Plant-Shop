@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { TypeMainCard } from '@/types';
+import EmptyItem from './EmptyItem.vue';
 
 type Props = TypeMainCard;
 
@@ -10,7 +11,7 @@ const { image, text, title } = defineProps<Props>();
   <div class="card">
     <div class="image">
       <img :src="image" alt="main pic" v-if="image" />
-      <div class="empty" v-if="!image">empty!</div>
+      <EmptyItem :condition="!!image" />
     </div>
     <div class="body">
       <div class="info">
@@ -66,16 +67,5 @@ const { image, text, title } = defineProps<Props>();
   font-size: var(--fz-text-large);
   line-height: var(--line-height);
   color: var(--color-brown);
-}
-.empty {
-  margin: auto;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: var(--color-brown);
-  font-size: 32px;
 }
 </style>

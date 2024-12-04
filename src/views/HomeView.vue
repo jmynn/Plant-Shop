@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import About from '@/components/About.vue';
-import Main from '@/components/Main.vue';
+import AboutSection from '@/components/AboutSection.vue';
+import MainSection from '@/components/MainSection.vue';
+import PlantsSection from '@/components/PlantsSection.vue';
 </script>
 
 <template>
-  <Main />
+  <MainSection />
   <div class="content">
-    <About />
+    <AboutSection />
+    <PlantsSection />
   </div>
 </template>
 

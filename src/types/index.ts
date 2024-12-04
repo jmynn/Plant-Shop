@@ -16,3 +16,16 @@ export type TypeAboutItem = {
   title: string;
   text: string;
 };
+
+export type TypeSortPlants = 'all' | 'cheaper' | 'expensive';
+
+export type TypePlantCost<C extends string> = {
+  value: number;
+  literal: `IDR ${number}.000` | C;
+};
+
+export type TypePlantItem<C extends string = ''> = {
+  title: string;
+  cost: TypePlantCost<C>;
+  src?: TypePath;
+};
