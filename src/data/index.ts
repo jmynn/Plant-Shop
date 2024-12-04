@@ -9,7 +9,11 @@ import type {
 
 export const PATHS = {
   HOME: '/',
-  ABOUT: '/about'
+  TEST: '/test',
+  TEST_NESTED: '/test/nested',
+  TEST_NONEXISTENT: '/test/nonexistent',
+  PARENT: '/parent',
+  PARENT_NESTED: '/parent/nested'
 } as const;
 
 export const MAIN_CARDS = [
