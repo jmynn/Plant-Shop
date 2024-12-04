@@ -18,7 +18,7 @@ watchEffect(() => {
     arr.sort((a, b) => (a.cost.value > b.cost.value ? 1 : -1));
   }
   if (sortPlants.value === 'expensive') {
-    arr.sort((a, b) => (a.cost.value > b.cost.value ? 1 : -1));
+    arr.sort((a, b) => (a.cost.value > b.cost.value ? -1 : 1));
   }
   plants.value = arr;
 });
