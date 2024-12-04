@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { VISIT_PIC_PATH } from '@/data';
+import { PATHS, VISIT_PIC_PATH } from '@/data';
 import { RouterLink } from 'vue-router';
 </script>
 
@@ -7,7 +7,7 @@ import { RouterLink } from 'vue-router';
   <section class="visit">
     <div class="info">
       <div class="title">Get your favourites plant on our shop now</div>
-      <RouterLink to="/" class="link _hover">Visit Shop</RouterLink>
+      <RouterLink :to="PATHS.ABOUT" class="link _hover">Visit Shop</RouterLink>
     </div>
     <div class="image">
       <img :src="VISIT_PIC_PATH" alt="visit section pic" />
