@@ -1,4 +1,11 @@
-import type { TypeAboutItem, TypeMainCard, TypePath, TypePlantItem, TypeReadonly } from '@/types';
+import type {
+  TypeAboutItem,
+  TypeFooterLink,
+  TypeMainCard,
+  TypePath,
+  TypePlantItem,
+  TypeReadonly
+} from '@/types';
 
 export const PATHS = {
   HOME: '/',
@@ -93,3 +100,32 @@ export const AD_SECTION_PICS = {
 } as TypeReadonly<Record<string, TypePath>, 'object'>;
 
 export const VISIT_PIC_PATH: TypePath = '/src/assets/plant.png';
+
+export const FOOTER_LINKS = [
+  {
+    title: 'Perusahaan',
+    links: [
+      {
+        path: '/',
+        label: 'Tentang Kami'
+      },
+      {
+        path: '/',
+        label: 'Hubungi Kami'
+      }
+    ]
+  },
+  {
+    title: 'Produk',
+    links: [
+      {
+        path: '/',
+        label: 'Tanaman'
+      },
+      {
+        path: '/',
+        label: 'Tanaman Lain'
+      }
+    ]
+  }
+] as TypeReadonly<TypeFooterLink, 'array'>;

@@ -29,3 +29,13 @@ export type TypePlantItem<C extends string = ''> = {
   cost: TypePlantCost<C>;
   src?: TypePath;
 };
+
+export type TypeFooterPath = {
+  label: string;
+  path: TypePath | string;
+};
+
+export type TypeFooterLink = {
+  title: string;
+  links: TypeFooterPath[];
+};
